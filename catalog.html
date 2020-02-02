@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -8,7 +7,7 @@
   
   <body>
     <header>
-      <nav>
+      <nav aria-label="Навигация по сайту">
         <a class="main-header-logo" href="index.html">
         <img src="img/logo.png" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         <ul class="site-navigation">
@@ -35,7 +34,64 @@
       
       <section class="filtres">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Форма -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="Baxter of California" checked>Baxter of California
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Mr Natty">Mr Natty
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Suavecito" checked>Suavecito
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Malin+Goetz">Malin+Goetz
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Murray’s">Murray’s
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="American Crew" checked>American Crew
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="item-group" value="Baxter of California">Baxter of California
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="item-group" value="Mr Natty" checked>Mr Natty
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="item-group" value="Suavecito">Suavecito
+                </label>
+              </li>
+             </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        <form>
       </section>
       
       <section>
